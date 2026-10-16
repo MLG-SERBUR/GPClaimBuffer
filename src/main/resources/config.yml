@@ -1,0 +1,20 @@
+# GPClaimBuffer configuration.
+# Enforces a buffer (gap) between top-level claims belonging to different owners.
+# Feature request: https://github.com/GriefPrevention/GriefPrevention/discussions/2660
+# Earlier discussion: https://github.com/GriefPrevention/GriefPrevention/discussions/1754
+
+# Minimum number of empty blocks required between the borders of two claims.
+# Measured edge-to-edge (Chebyshev): two claims are "too close" when expanding
+# an existing claim by this many blocks in X/Z would overlap the new claim.
+# Adjacent claims have a gap of 0.
+# 0 disables the check.
+minimum-distance: 0
+
+# When true, claims owned by the same player may be placed adjacent to each
+# other (or within the buffer). Only claims of *different* owners are checked.
+same-owner-exempt: true
+
+# When true, administrative claims are ignored as obstacles (players may claim
+# right up against them). When false (default), the buffer also applies
+# around admin claims, but creating an admin claim itself always bypasses.
+ignore-admin-claims: false

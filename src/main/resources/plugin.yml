@@ -1,0 +1,13 @@
+name: "${project.name}"
+main: "${project.groupId}.${project.artifactId}.${project.name}"
+version: "${project.version}"
+api-version: "${project.api-version}"
+author: "RoboMWM"
+description: "${project.description}"
+depend:
+  - "GriefPrevention"
+
+permissions:
+  gpclaimbuffer.bypass:
+    description: "Bypass the minimum buffer distance between claims."
+    default: op

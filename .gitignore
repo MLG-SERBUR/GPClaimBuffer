@@ -1,0 +1,10 @@
+target/
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+bin/
+.DS_Store
+Thumbs.db
+hs_err_pid*
