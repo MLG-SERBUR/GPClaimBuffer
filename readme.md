@@ -47,6 +47,15 @@ ignore-admin-claims: false
 
 `minimum-distance: 0` disables the check.
 
+## Permissions
+
+* `gpclaimbuffer.bypass` (op by default) — bypass the buffer check
+  when creating or resizing claims.
+
+## Commands
+
+None. All behavior is config-driven (see above).
+
 ## Build
 
 Targets legacy GriefPrevention `16.18.7`
